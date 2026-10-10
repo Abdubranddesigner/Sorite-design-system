@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x240" name="Brand primitives" subtitle="Logo, SectionHeading, LotusPattern" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:24px;background:#fff;font-family:var(--font-body)}.row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.lab{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}</style></head>
+<body><div id="root"></div><script type="text/babel">
+const { Logo, SectionHeading, LotusPattern } = window.SoretiDesignSystem_d8687c;
+function App(){ return (<>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:16}}>
+<div style={{display:'flex',flexDirection:'column',gap:18}}><div className="row" style={{gap:22}}><Logo width={150} assetBase="../../assets/logo"/><Logo variant="lotus" width={56} assetBase="../../assets/logo"/><Logo variant="app-icon" width={56} assetBase="../../assets/logo"/></div>
+<SectionHeading eyebrow="The art of touch" title={"MASSAGE\nJOURNEYS"} size="md"/></div>
+<LotusPattern tone="gold-on-violet" assetBase="../../assets/logo" radius={10} size={34} style={{padding:24,height:'100%',boxSizing:'border-box'}}><SectionHeading onDark size="sm" eyebrow="Loyalty & gifting" title={"GIFT THE GIFT\nOF SORETI"}/></LotusPattern>
+</div></>); }
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Buttons" subtitle="Pill buttons and circular icon buttons" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:24px;background:#fff;font-family:var(--font-body)}.row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.lab{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}</style></head>
+<body><div id="root"></div><script type="text/babel">
+const { Button, IconButton, Icon } = window.SoretiDesignSystem_d8687c;
+function App(){ return (<>
+<div className="lab">On white</div>
+<div className="row"><Button>Book Now</Button><Button variant="accent">Explore Services</Button><Button variant="outline">See Pricing</Button><Button variant="ghost">Read more</Button><Button disabled>Disabled</Button></div>
+<div className="row" style={{marginTop:14}}><Button size="sm">Small</Button><Button size="md">Medium</Button><Button size="lg">Large</Button><IconButton label="Call"><Icon name="phone" size={18}/></IconButton><IconButton variant="solid" label="Book"><Icon name="calendar" size={18}/></IconButton><IconButton variant="ghost" label="Location"><Icon name="map-pin" size={18}/></IconButton></div>
+<div style={{background:'var(--violet-700)',borderRadius:10,padding:18,marginTop:18}} className="row"><Button variant="inverse">Book Now</Button><Button variant="accent">Gift Vouchers</Button><Button variant="outline-inverse">Our Story</Button><IconButton variant="inverse" label="Instagram"><Icon name="instagram" size={18}/></IconButton></div></>); }
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>
